@@ -1,0 +1,40 @@
+Enter password: *********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 84
+Server version: 8.0.24 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| bookstoredb        |
+| information_schema |
+| mysql              |
+| performance_schema |
+| rajdb              |
++--------------------+
+5 rows in set (0.08 sec)
+
+mysql> use bookstoredb;
+Database changed
+mysql> select * from books;
++----------+--------------------+---------------+------------------+----------------+---------+-------+--------+
+| bookcode | bookname           | category      | author           | publication    | edition | price | review |
++----------+--------------------+---------------+------------------+----------------+---------+-------+--------+
+|      100 | emma               | romance       | janeausten       | johnmuray      | first   | 129   | 2star  |
+|      101 | wingsoffire        | autobiography | abdulkalam       | indianbooks    | first   | 220   | 5star  |
+|      102 | englishaugust      | comedy        | u.chatterjee     | penquinbooks   | first   | 550   | 3star  |
+|      104 | the white tiger    | mystery       | arvinda adiga    | agida novel    | first   | 449   | 3star  |
+|      105 | Discovery of India | culture       | jawaharlal nehru | times of india | first   | 400   | 3star  |
++----------+--------------------+---------------+------------------+----------------+---------+-------+--------+
+5 rows in set (0.06 sec)
+
+mysql>
